@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f7fa;
+    color: #2e2e2e;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.site-header {
+    background-color: #1f2933;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.site-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.subtitle {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.highlight {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.site-footer {
+    background-color: #1f2933;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.site-footer a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 2.5rem;
+    }
+}
