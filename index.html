@@ -5,46 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyano Grieten | Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
+
 <body>
 
-<header class="site-header">
-    <div class="container">
-        <h1>Kyano Grieten</h1>
-        <p class="subtitle">Student Digitale Vormgeving • Designer & Developer</p>
-        <nav class="main-nav">
-            <a href="#about">Over mij</a>
-            <a href="#projects">Projecten</a>
-            <a href="#extra">Extra</a>
+<header class="site-header" id="top">
+    <div class="container header-inner">
+        <a href="#home" class="home">
+            <span class="name">Kyano Grieten</span>
+        </a>
+
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over">Over mij</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#special">Special</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../portfolio/portfolio.html/">Portfolio</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
-<main class="container">
-    <section id="about" class="card">
-        <h2>Over mij</h2>
-        <p>
-            Ik ben een student Digitale Vormgeving aan PXL, met een passie voor
-            creatief design en programmeren. Ik combineer technische skills met een
-            oog voor detail en mooie interfaces.
-        </p>
+<main id="main">
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <figure class="hero-media">
+                <img src="./images/image0.jpg" alt="portretafbeelding" width="1200" height="750"/>
+            </figure>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="accent">Mijn</span> Portfolio
+                </h1>
+                <p class="hero-text">
+                    Ik combineer creativiteit en techniek om ideeën tot leven te brengen. Scroll verder en ontdek mijn
+                    werk in design en front-end development.
+                </p>
+
+                <div class="hero-projects">
+                    <a class="button button-primary" href="#projecten">Ontdek projecten</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects" class="card">
-        <h2>Projecten</h2>
-        <p>.</p>
+    <section id="over" class="section section-about">
+        <div class="container grid-2">
+            <div>
+                <h2>Over mij</h2>
+                <p>
+                    Hey! Ik ben <strong>Kyano Grieten</strong>, een student Digitale Vormgeving aan PXL, met een passie
+                    voor creatief design en programmeren. Ik combineer technische skills met een oog voor detail en
+                    mooie interface
+                    Persoonlijk hou ik het meeste van design en is design ook mijn sterkte, maar ik vind het ook leuk om
+                    te programmeren en zo mijn ontwerpen tot leven te brengen.
+                </p>
+                <ul class="badges" aria-label="Sterktes">
+                    <li>Creatief</li>
+                    <li>Precisiegericht</li>
+                    <li>Kwaliteitsgericht</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Waarom deze opleiding?</h3>
+                <p>
+                    Ik koos voor <em>Digitale Vormgeving</em> omdat ik graag creatief bezig ben. Ik heb al wat ervaring
+                    met programma's zoals Adobe Photoshop en Illustrator, maar ik wil mijn skills verder ontwikkelen en
+                    nieuwe tools leren kennen. Daarnaast ben ik ook geïnteresseerd in webontwikkeling en wil ik leren
+                    hoe ik mijn ontwerpen kan omzetten in functionele websites en applicaties.
+                </p>
+                <p class="note">
+                    Tools die ik regelmatig gebruik: Webstorm, GitHub, Adobe Photoshop, Adobe Illustrator, AI.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="extra" class="card highlight">
-        <h2>Extra</h2>
-        <p>.</p>
+    <section id="projecten" class="section section-projects">
+        <div class="container">
+            <div class="section-head">
+                <h2>Projecten</h2>
+                <div class="filters" role="tablist" aria-label="Projectfilter">
+                    <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Alle</button>
+                    <button class="filter" data-filter="school" role="tab">School</button>
+                    <button class="filter" data-filter="niet-school" role="tab">Niet‑school</button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <article class="card" data-category="school">
+                    <img class="card-img" src="./images/.jpg" alt="lorem 10" width="960"
+                         height="640"/>
+                    <div class="card-body">
+                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <p class="card-meta">
+                            Vak: <strong>Lorem1</strong> · Rol: <strong>Lorem ipsum dolor sit amet.</strong>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid deleniti id ipsum
+                            minus natus optio recusandae reiciendis ullam vel?
+                        </p>
+                        <ul class="tags">
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card" data-category="school">
+                    <img class="card-img" src="./images/.jpg" alt="lorem 10" width="960"
+                         height="640"/>
+                    <div class="card-body">
+                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <p class="card-meta">
+                            Vak: <strong>Lorem1</strong> · Rol: <strong>Lorem ipsum dolor sit amet.</strong>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid deleniti id ipsum
+                            minus natus optio recusandae reiciendis ullam vel?
+                        </p>
+                        <ul class="tags">
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card" data-category="niet-school">
+                    <img class="card-img" src="./images/.jpg" alt="lorem 10" width="960"
+                         height="640"/>
+                    <div class="card-body">
+                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <p class="card-meta">
+                            Vak: <strong>Lorem1</strong> · Rol: <strong>Lorem ipsum dolor sit amet.</strong>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid deleniti id ipsum
+                            minus natus optio recusandae reiciendis ullam vel?
+                        </p>
+                        <ul class="tags">
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card" data-category="niet-school">
+                    <img class="card-img" src="./images/.jpg" alt="lorem 10" width="960"
+                         height="640"/>
+                    <div class="card-body">
+                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <p class="card-meta">
+                            Vak: <strong>Lorem1</strong> · Rol: <strong>Lorem ipsum dolor sit amet.</strong>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid deleniti id ipsum
+                            minus natus optio recusandae reiciendis ullam vel?
+                        </p>
+                        <ul class="tags">
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                            <li>Lorem.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="special" class="section section-special">
+        <div class="container grid-2">
+            <div>
+                <h2>Mijn creatieve proces</h2>
+                <ol class="process">
+                    <li><strong>Inspiratie:</strong> doelen, doelgroep, vereisten</li>
+                    <li><strong>Concept:</strong> ruw idee, componenten</li>
+                    <li><strong>Design:</strong> ontwerp, code, responsiviteit</li>
+                    <li><strong>Feedback:</strong> klasgenoten, familie, vrienden</li>
+                    <li><strong>Eindwerk:</strong> aanpassingen, eindwerk, documentatie</li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tools & skills</h3>
+                <ul class="tools">
+                    <li>Webstorm</li>
+                    <li>GitHub</li>
+                    <li>Figma</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe InDesign</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>
+                Zin om samen te werken of feedback te geven?
+                <a href="mailto:kyano@example.com">kyano.grieten@student.pxl.be</a>
+            </p>
+            <ul class="contact-list">
+                <li><a href="https://github.com/kyanogr" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="../portfolio/portfolio.html">/portfolio</a> (situering DVO & eindreflectie WPL1)</li>
+            </ul>
+        </div>
     </section>
 </main>
 
 <footer class="site-footer">
-    <p>&copy; 2025 Kyano Grieten</p>
-    <a href="./privacy.txt">Privacybeleid</a>
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Kyano Grieten. Alle rechten voorbehouden.</p>
+        <nav>
+            <a href="privacy.txt">Privacy‑richtlijnen</a>
+        </nav>
+    </div>
 </footer>
-
 </body>
 </html>
