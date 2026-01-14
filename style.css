@@ -290,3 +290,55 @@ p {
     justify-content: space-between;
     padding: 1rem 0
 }
+
+#talen {
+    padding: 0px 20px;
+    color: #e8eaed;
+}
+
+#talen .skills-col {
+    width: min(520px, 100%);
+    margin: 0;
+}
+
+#talen h2 {
+    margin: 0 0 12px;
+    font-size: 1.6rem;
+}
+
+#talen .skill {
+    margin: 10px 0 14px;
+}
+
+#talen .skill-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+#talen .skill-label {
+    font-weight: 600;
+}
+
+#talen .skill-value {
+    color: #b5bdc6;
+    font-variant-numeric: tabular-nums;
+}
+
+#talen .skill-bar {
+    position: relative;
+    height: 10px;
+    background: #0e1113;
+    border-radius: 999px;
+    border: 1px solid #2a3136;
+}
+
+#talen .skill-fill {
+    display: block;
+    height: 100%;
+    width: var(--level);
+    background: linear-gradient(90deg, #62d4ff, #9ad1ff);
+    border-radius: inherit;
+}
