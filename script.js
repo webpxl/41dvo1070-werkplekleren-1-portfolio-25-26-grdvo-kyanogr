@@ -3,6 +3,17 @@ const cards = document.querySelectorAll('.card');
 const scrollToTopBtn = document.getElementById('scrollToTop');
 const nav = document.getElementById("site-nav");
 
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("site-nav");
+
+    if(hamburger && nav) {
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    }
+});
+
 function applyFilter(category) {
     cards.forEach(card => {
         const match = category === 'all' || card.dataset.category === category;
@@ -24,17 +35,5 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById("hamburger");
-    const nav = document.getElementById("site-nav");
-
-    if(hamburger && nav) {
-        hamburger.addEventListener("click", () => {
-            nav.classList.toggle("active");
-        });
-    }
-});
-
 
 document.getElementById('year').textContent = new Date().getFullYear();
