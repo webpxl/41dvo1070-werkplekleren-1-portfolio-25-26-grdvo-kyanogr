@@ -1,6 +1,7 @@
 const filterButtons = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.card');
 const scrollToTopBtn = document.getElementById('scrollToTop');
+const nav = document.getElementById("site-nav");
 
 function applyFilter(category) {
     cards.forEach(card => {
@@ -20,8 +21,20 @@ filterButtons.forEach(btn => {
 scrollToTopBtn.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // vloeiend scrollen
+        behavior: 'smooth'
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("site-nav");
+
+    if(hamburger && nav) {
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    }
+});
+
 
 document.getElementById('year').textContent = new Date().getFullYear();
