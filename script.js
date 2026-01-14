@@ -1,3 +1,5 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+
 const filterButtons = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.card');
 const scrollToTopBtn = document.getElementById('scrollToTop');
@@ -35,5 +37,3 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-document.getElementById('year').textContent = new Date().getFullYear();
