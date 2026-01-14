@@ -187,7 +187,7 @@ p {
 }
 
 .section-projects {
-    background: #121417
+    background: #121417;
 }
 
 .section-head {
@@ -218,20 +218,20 @@ p {
 
 .cards {
     display: grid;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
-    margin-top: 1rem
+    align-items: start;
 }
 
 .card {
-    grid-column: span 6;
     background: #1c1f21;
-    border: 1px solid #2a2f33;;
+    border: 1px solid #2a2f33;
     border-radius: .9rem;
     overflow: hidden;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
+
 
 .card-img {
     aspect-ratio: 16/10;
@@ -239,7 +239,7 @@ p {
 }
 
 .card-body {
-    padding: 1rem 1rem 1.25rem
+    padding: 1rem
 }
 
 .card-title {
@@ -291,26 +291,26 @@ p {
     padding: 1rem 0
 }
 
-#talen {
+#languages {
     padding: 0px 20px;
     color: #e8eaed;
 }
 
-#talen .skills-col {
+#languages .skills-col {
     width: min(520px, 100%);
     margin: 0;
 }
 
-#talen h2 {
+#languages h2 {
     margin: 0 0 12px;
     font-size: 1.6rem;
 }
 
-#talen .skill {
+#languages .skill {
     margin: 10px 0 14px;
 }
 
-#talen .skill-row {
+#languages .skill-row {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -318,16 +318,16 @@ p {
     margin-bottom: 6px;
 }
 
-#talen .skill-label {
+#languages .skill-label {
     font-weight: 600;
 }
 
-#talen .skill-value {
+#languages .skill-value {
     color: #b5bdc6;
     font-variant-numeric: tabular-nums;
 }
 
-#talen .skill-bar {
+#languages .skill-bar {
     position: relative;
     height: 10px;
     background: #0e1113;
@@ -335,7 +335,7 @@ p {
     border: 1px solid #2a3136;
 }
 
-#talen .skill-fill {
+#languages .skill-fill {
     display: block;
     height: 100%;
     width: var(--level);
