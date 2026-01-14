@@ -446,39 +446,39 @@ p {
     }
 }
 
-/* Mobiel & kleine tablets */
 @media (max-width: 768px) {
-    /* Hero grid naar 1 kolom */
+
     .hero-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        text-align: center;
     }
 
     .hero-content {
-        text-align: center;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-projects {
         justify-content: center;
     }
 
-    /* Twee-koloms grids worden 1 kolom */
     .grid-2 {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
-    /* Kaarten stapelen */
     .cards {
         grid-template-columns: 1fr;
     }
 
-    /* Section padding iets kleiner */
     .section {
         padding: 2.5rem 1rem;
     }
 
-    /* Skills & tools centeren */
     #languages .skills-col {
         width: 100%;
     }
@@ -487,14 +487,12 @@ p {
         justify-content: center;
     }
 
-    /* Footer nav centreren */
     .footer-inner {
         flex-direction: column;
         gap: 0.75rem;
         text-align: center;
     }
 
-    /* Header nav naar kolom */
     .site-nav ul {
         flex-direction: column;
         gap: 0.75rem;
@@ -504,7 +502,6 @@ p {
     }
 }
 
-/* Extra klein scherm (smartphones <480px) */
 @media (max-width: 480px) {
     .hero-title {
         font-size: clamp(1.8rem, 6vw + 0.5rem, 3rem);
@@ -528,27 +525,19 @@ p {
     }
 }
 
-/* Hamburger-menu (optioneel, voor mobiel) */
 @media (max-width: 768px) {
     #site-nav {
-        display: none; /* standaard verborgen */
+        display: none;
         position: absolute;
         top: 64px;
         right: 1rem;
         background: #222527;
         padding: 1rem;
         border-radius: 0.5rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
 
     #site-nav.active {
         display: block;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        font-size: 1.5rem;
-        color: #e8eaed;
     }
 }
