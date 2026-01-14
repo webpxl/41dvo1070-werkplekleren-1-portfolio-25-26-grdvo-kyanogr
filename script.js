@@ -1,5 +1,6 @@
 const filterButtons = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.card');
+const scrollToTopBtn = document.getElementById('scrollToTop');
 
 function applyFilter(category) {
     cards.forEach(card => {
@@ -13,6 +14,13 @@ filterButtons.forEach(btn => {
         filterButtons.forEach(b => b.classList.remove('is-active'));
         btn.classList.add('is-active');
         applyFilter(btn.dataset.filter);
+    });
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // vloeiend scrollen
     });
 });
 
